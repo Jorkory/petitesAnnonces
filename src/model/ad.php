@@ -1,10 +1,13 @@
 <?php
 
 class Ad {
-    public string $title;
-    public string $description;
-    public string $image;
-    public float $price;
+
+    public function __construct(
+        public string $title = "",
+        public string $description = "",
+        public float $price = 0,
+        public string $image = "",
+    ) {}
 
     public function getAd($id) {
         require_once('src/libs/ads.php');

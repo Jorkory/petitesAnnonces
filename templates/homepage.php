@@ -4,7 +4,7 @@
 <main>
     <?php foreach ($ads as $ad): ?>
         <article>
-            <a href="?id=<?= $ad['id']?>">
+            <a href="?id=<?= $ad['id'] ?? 'error' ?>">
                 <div class="info">
                     <h2><?= htmlspecialchars($ad['title']) ?></h2>
                     <p><?= $ad['price'] ?> €</p>
