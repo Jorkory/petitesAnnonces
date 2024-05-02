@@ -6,10 +6,10 @@
         <article>
             <a href="?id=<?= $ad['id']?>">
                 <div class="info">
-                    <h2><?= $ad['title'] ?></h2>
+                    <h2><?= htmlspecialchars($ad['title']) ?></h2>
                     <p><?= $ad['price'] ?> €</p>
                 </div>
-                <img src="<?= $ad['image'] ?>" alt="<?= $ad['title'] ?>" />
+                <img src="<?= $ad['image'] ?>" alt="<?= htmlspecialchars($ad['title']) ?>" />
             </a>
         </article>
     <?php endforeach ?>
