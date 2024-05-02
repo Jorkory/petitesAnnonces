@@ -11,6 +11,8 @@ body {
 
 main {
   max-width: 1240px;
+  box-sizing: border-box;
+  width: 100%;
   flex: 1;
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +53,7 @@ main article .info {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(245, 244, 244);
   padding: 10px;
 }
 main article .info p {
@@ -104,4 +106,29 @@ main article img {
   color: white;
   padding: 30px 0px;
   text-align: center;
+}
+
+.ad__section {
+  width: 100%;
+}
+.ad__section h2 {
+  text-align: center;
+}
+.ad__section img {
+  display: block;
+  width: 600px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 50px auto;
+}
+.ad__section .info {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(255, 225, 225);
+  padding: 20px 50px;
+  border-radius: 10px;
+}
+.ad__section .info p {
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

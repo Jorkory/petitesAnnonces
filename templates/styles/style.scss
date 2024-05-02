@@ -11,6 +11,8 @@ body {
 
 main {
     max-width: 1240px;
+    box-sizing: border-box;
+    width: 100%;
     flex:1;
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +54,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            background-color: rgb(235, 235, 235);
+            background-color: rgb(245, 244, 244);
             padding: 10px;
 
             p{
@@ -116,4 +118,32 @@ main {
         text-align: center;
     }
 
+}
+
+.ad__section {
+    width: 100%;
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        width: 600px;
+        height: 400px;
+        object-fit: contain;
+        margin: 50px auto;
+    }
+
+    .info {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgb(255, 225, 225);
+        padding: 20px 50px;
+        border-radius: 10px;
+
+        p {
+            padding: 20px;
+        }
+    }
 }
