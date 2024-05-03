@@ -4,18 +4,18 @@
     <main>
         <section>
             <h2>Publier une annonce :</h2>
-            <form action="" method="POST">
+            <form action="?action=create" method="POST">
                 <div>
                 <label for="title">Titre :</label>
-                <input type="text" id="title" name="title"/>
+                <input type="text" id="title" name="formAd[title]" value="<?= $form['title'] ?>" />
                 </div>
                 <div>
                 <label for="description">Description :</label>
-                <textarea id="description" name="description"></textarea>
+                <textarea id="description" name="formAd[description]" ><?= $form['description'] ?></textarea>
                 </div>
                 <div>
                 <label for="text">Prix :</label>
-                <input type="text" id="price" name="price"/>
+                <input type="text" id="price" name="formAd[price]" value="<?= $form['price'] ?>" />
                 </div>
                 <div>
                 <input type="submit" value="Publier" />
